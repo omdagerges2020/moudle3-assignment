@@ -1,0 +1,148 @@
+body {
+    font-size: 16px;
+    color: black;
+    font-family: 'oxygen' sans-serif;
+}
+
+/** Header **/
+
+.navbar {
+    background-color: #999999;
+    border-bottom: 3px solid black;
+    border-radius: 0;
+}
+.navbar-header .navbar-brand h1 {
+    margin-top: 0;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+}
+
+.navbar-header .navbar-brand {
+    padding-left: 0;
+    
+}
+.navbar-header .navbar-brand a {
+    text-decoration: none;
+}
+
+.navbar .navbar-toggle {
+    border: 2px solid black;
+    margin-top: 20px;
+    background-color: #999999;
+}
+
+
+.navbar .navbar-toggle .icon-bar {
+    border: 2px solid black;
+}
+.navbar .navbar-toggle.icon-bar {
+    border-color: #dcdcdc;
+}
+
+/** Collabsable **/
+.navbar #collapsable-nav {
+    height: 145px;
+}
+.navbar #collapsable-nav #nav-list {
+    background-color: #dcdcdc;
+
+}
+
+
+.navbar #collapsable-nav #nav-list li a {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+/** End Collabsable **/
+
+/** Start Main-content **/
+#main-content h2 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+#main-content section {
+    background-color: #999999;
+}
+
+#main-content section h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#main-content section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+
+/************** Large Devices Only ************/
+/* Header */
+@media(min-width: 1200px) {
+    #nav-list {
+        display: none;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+}
+
+/************* Medium Devices Only ************/
+@media(min-width: 992px) and (max-width: 1199px) {
+    #nav-list {
+        display: none;
+    }
+    .navbar {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+/************ Small Devices Only **************/
+@media(min-width: 768px) and (max-width: 991px) {
+    #nav-list {
+        display: none;
+    }
+    .navbar {
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+/************** Extra small devices **************/
+@media(max-width: 767px) {
+    .navbar-header .navbar-brand {
+        margin-left: 15px;
+        padding-bottom: 10px;
+    }
+    .navbar-header {
+        height: 80px;
+    }
+
+    .navbar {
+        border-bottom: none;
+    }
+
+    #main-content .home-title {
+       padding-bottom: 10px;
+        
+    }
+
+    #main-content section {
+        margin-bottom: 150px;
+       padding-bottom: 50px;
+    }
+}
